@@ -1,0 +1,1 @@
+cmd_/home/lee/yajie_ws/homework1/hello_world/hello_world.ko := ld -r  -m elf_x86_64 -z noexecstack   --build-id=sha1  -T scripts/module.lds -o /home/lee/yajie_ws/homework1/hello_world/hello_world.ko /home/lee/yajie_ws/homework1/hello_world/hello_world.o /home/lee/yajie_ws/homework1/hello_world/hello_world.mod.o;  true

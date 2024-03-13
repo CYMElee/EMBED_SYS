@@ -1,0 +1,1 @@
+cmd_/home/lee/yajie_ws/homework1/file_io/fileIO.ko := ld -r  -m elf_x86_64 -z noexecstack   --build-id=sha1  -T scripts/module.lds -o /home/lee/yajie_ws/homework1/file_io/fileIO.ko /home/lee/yajie_ws/homework1/file_io/fileIO.o /home/lee/yajie_ws/homework1/file_io/fileIO.mod.o;  true

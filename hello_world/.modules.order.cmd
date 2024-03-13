@@ -1,0 +1,1 @@
+cmd_/home/lee/yajie_ws/homework1/hello_world/modules.order := {   echo /home/lee/yajie_ws/homework1/hello_world/hello_world.ko; :; } | awk '!x[$$0]++' - > /home/lee/yajie_ws/homework1/hello_world/modules.order
