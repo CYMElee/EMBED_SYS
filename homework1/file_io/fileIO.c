@@ -38,28 +38,28 @@ static int fileIO_init(void)
 	output_offset = 0;
 	
 	//==open input.txt and save into buffer ==//
-	input_file = filp_open("/home/lee/yajie_ws/homework1/hello_world/input.txt", 			O_RDONLY,0);
+	input_file = filp_open("/home/lee/yajie_ws/homework1/file_io/input.txt", 			O_RDONLY,0);
 	printk("success open intput file");
 	kernel_read(input_file, input_buf ,1024, &input_offset);
 	
-	//while(input_buf[input_index] >='a' && input_buf[input_index] <='z')
-	//{
-	//input_index++;
-	//}
-	//input_index--;
-	//while(input_index >=0)
-	//{
+	while(input_buf[input_index] >='a' && input_buf[input_index] <='z')
+	{
+	input_index++;
+	}
+	input_index--;
+	while(input_index >=0)
+	{
 	
-	//output_buf[output_index] = input_buf[input_index];
+	output_buf[output_index] = input_buf[input_index];
 	
 	
-	//input_index--;
-	//output_index++;
-	//}
+	input_index--;
+	output_index++;
+	}
 	
-	//output_file = filp_open("/home/lee/yajie_ws/homework1/hello_world/output.txt", 			O_WRONLY,0);
+	output_file = filp_open("/home/lee/yajie_ws/homework1/file_io/output.txt", 			O_WRONLY,0);
 	
-	//kernel_write(output_file, output_buf ,output_index, &output_offset);
+	kernel_write(output_file, output_buf ,output_index, &output_offset);
 	
 	
 	
