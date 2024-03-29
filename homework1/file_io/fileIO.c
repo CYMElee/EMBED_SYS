@@ -38,7 +38,7 @@ static int fileIO_init(void)
 	output_offset = 0;
 	
 	//==open input.txt and save into buffer ==//
-	input_file = filp_open("/home/lee/yajie_ws/homework1/hello_world/input.txt", 			O_RDONLY,0);
+	input_file = filp_open("/home/lee/yajie_ws/homework1/file_io/input.txt", 			O_RDONLY,0);
 	printk("success open intput file");
 	kernel_read(input_file, input_buf ,1024, &input_offset);
 	
@@ -57,7 +57,11 @@ static int fileIO_init(void)
 	output_index++;
 	}
 	
+<<<<<<< HEAD:file_io/fileIO.c
 	output_file = filp_open("/home/lee/yajie_ws/homework1/hello_world/output.txt", 			O_WRONLY,0);
+=======
+	output_file = filp_open("/home/lee/yajie_ws/homework1/file_io/output.txt", 			O_WRONLY,0);
+>>>>>>> af0f3dba5e7995ec8e64633ad72cebbcb771488c:homework1/file_io/fileIO.c
 	
 	kernel_write(output_file, output_buf ,output_index, &output_offset);
 	

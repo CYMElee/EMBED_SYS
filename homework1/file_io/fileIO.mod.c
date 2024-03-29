@@ -31,6 +31,7 @@ __used __section("__versions") = {
 	{ 0x2c319631, "filp_close" },
 	{ 0x37a0cba, "kfree" },
 	{ 0x5b8239ca, "__x86_return_thunk" },
+	{ 0x797dafb0, "kernel_write" },
 	{ 0xaa464f89, "kernel_read" },
 	{ 0x70aa6c73, "filp_open" },
 	{ 0x92997ed8, "_printk" },
@@ -42,4 +43,4 @@ __used __section("__versions") = {
 MODULE_INFO(depends, "");
 
 
-MODULE_INFO(srcversion, "70922D0EAABD89F8CE8E1F5");
+MODULE_INFO(srcversion, "7954B33BADC4F8E91777BF4");
